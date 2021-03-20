@@ -1,7 +1,8 @@
 const Sequelize = require("sequelize");
 const configDB = require("../config/database");
+const Task = require("../app/models/Task");
 
-const models = [];
+const models = [Task];
 
 class Database {
   constructor() {
