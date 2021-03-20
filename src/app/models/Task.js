@@ -5,7 +5,7 @@ class Task extends Model {
   static init(sequelize) {
     super.init(
       {
-        description: Sequelize.STRING,
+        descricao: Sequelize.STRING,
         status: Sequelize.ENUM("pendente", "andamento", "concluida"),
       },
       { sequelize }
