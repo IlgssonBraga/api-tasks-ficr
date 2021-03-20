@@ -1,9 +1,9 @@
 const {Router, response} = require("express")
-const {todosRoutes} = require("./todos.routes")
+const { tasksRoutes } = require("./tasks.routes");
 
 const routes = Router()
 
-routes.use("/todos", todosRoutes)
+routes.use("/tasks", tasksRoutes);
 
 routes.get("/", (req,res) => res.send('Main page'))
 
